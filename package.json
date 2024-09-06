@@ -12,8 +12,8 @@
     "typecheck": "tsc --noEmit"
   },
   "devDependencies": {
-    "sst": "^2",
-    "aws-cdk-lib": "2.142.1",
+    "sst": "2.39.8",
+    "aws-cdk-lib": "2.110.1",
     "constructs": "10.3.0",
     "typescript": "^5.5.4",
     "@tsconfig/node18": "^18.2.4"
