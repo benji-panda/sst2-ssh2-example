@@ -1,10 +1,14 @@
-import { StackContext, NextjsSite, Api,} from "sst/constructs";
+import { StackContext, NextjsSite, Api, Cron,} from "sst/constructs";
 
 export function Default({ stack }: StackContext) {
 
   const api = new Api(stack, "api", {
     routes: {
-      "GET /": "packages/functions/src/time.handler",
+      "GET /": {
+        function: {
+          handler: "packages/functions/src/time.handler",
+        }
+      }
     },
   });
 
