@@ -7,9 +7,13 @@
     "typecheck": "tsc -noEmit"
   },
   "devDependencies": {
-    "@types/node": "^22.5.4",
     "@types/aws-lambda": "^8.10.145",
-    "vitest": "^2.0.5",
-    "sst": "2.39.8"
+    "@types/node": "^22.5.4",
+    "sst": "2.39.8",
+    "vitest": "^2.0.5"
+  },
+  "dependencies": {
+    "@types/ssh2-sftp-client": "^9.0.4",
+    "ssh2-sftp-client": "^11.0.0"
   }
 }
